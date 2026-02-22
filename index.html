@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totaalonderhoud Brabant | Meesters in Vastgoedonderhoud</title>
+    <title>Totaalonderhoud Brabant | Premium Vastgoedonderhoud</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -26,14 +26,14 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s ease;
         }
+        
         .card-blur:hover {
             border-color: #ea580c;
             transform: translateY(-8px);
             background: rgba(30, 41, 59, 0.7);
         }
 
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .img-fallback { background-color: #1e293b; }
 
         .btn-shine {
             position: relative;
@@ -42,22 +42,15 @@
         .btn-shine::after {
             content: "";
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
+            top: -50%; left: -50%; width: 200%; height: 200%;
             background: rgba(255,255,255,0.1);
             transform: rotate(45deg);
             transition: 0.6s;
         }
         .btn-shine:hover::after { left: 120%; }
 
-        .service-img {
-            width: 100%;
-            height: 260px;
-            object-fit: cover;
-            border-radius: 1.5rem;
-        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="antialiased">
@@ -84,7 +77,7 @@
 
     <section class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden hero-gradient">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover opacity-20 grayscale" alt="Luxe woning onderhoud">
+            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1600" class="w-full h-full object-cover opacity-20 grayscale" alt="Luxe woning">
         </div>
         
         <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
@@ -110,7 +103,7 @@
             </div>
             <div class="space-y-4">
                 <div class="text-orange-600 text-4xl font-black italic">100%</div>
-                <h3 class="text-sm font-bold uppercase tracking-widest text-white">Tevedenheidsgarantie</h3>
+                <h3 class="text-sm font-bold uppercase tracking-widest text-white">Tevredenheid</h3>
                 <p class="text-slate-500 text-xs italic leading-relaxed">Wij gaan pas weg als u volledig tevreden bent.</p>
             </div>
             <div class="space-y-4">
@@ -122,17 +115,16 @@
     </section>
 
     <section id="diensten" class="py-32 px-6 max-w-7xl mx-auto">
-        <div class="mb-20 flex flex-col md:flex-row justify-between items-end gap-6">
-            <div>
-                <span class="text-orange-600 font-bold text-xs uppercase tracking-[0.4em] mb-4 block">Specialisaties</span>
-                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter">Onze <span class="text-orange-600">Expertise.</span></h2>
-            </div>
-            <p class="text-slate-500 max-w-sm text-sm italic">Wij werken uitsluitend met A-merken zoals Sikkens, Sigma en Remmers.</p>
+        <div class="mb-20">
+            <span class="text-orange-600 font-bold text-xs uppercase tracking-[0.4em] mb-4 block">Specialisaties</span>
+            <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter">Onze <span class="text-orange-600">Expertise.</span></h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-10">
             <div class="card-blur rounded-[2.5rem] p-5 flex flex-col shadow-xl">
-                <img src="https://images.unsplash.com/photo-1635443204333-6031804f54e6?q=80&w=1200" class="service-img mb-8" alt="Dakreiniging Brabant" loading="lazy">
+                <div class="img-fallback rounded-[1.5rem] overflow-hidden mb-8 h-[260px]">
+                    <img src="https://images.pexels.com/photos/5974337/pexels-photo-5974337.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover" alt="Dakreiniging" loading="lazy">
+                </div>
                 <h3 class="text-2xl font-black uppercase italic mb-4 px-2">Dakreiniging</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Verwijderen van mos, algen en diepvuil. Inclusief impregneren voor jarenlange bescherming.</p>
                 <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between px-2">
@@ -142,7 +134,9 @@
             </div>
 
             <div class="card-blur rounded-[2.5rem] p-5 flex flex-col shadow-xl">
-                <img src="https://images.unsplash.com/photo-1584622781564-1d9876a13d00?q=80&w=1200" class="service-img mb-8" alt="Gevelonderhoud" loading="lazy">
+                <div class="img-fallback rounded-[1.5rem] overflow-hidden mb-8 h-[260px]">
+                    <img src="https://images.pexels.com/photos/5974340/pexels-photo-5974340.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover" alt="Gevelonderhoud" loading="lazy">
+                </div>
                 <h3 class="text-2xl font-black uppercase italic mb-4 px-2">Gevelherstel</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Herstel van scheuren, nieuw voegwerk en hydrofoberen tegen doorslaand vocht.</p>
                 <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between px-2">
@@ -152,36 +146,14 @@
             </div>
 
             <div class="card-blur rounded-[2.5rem] p-5 flex flex-col shadow-xl">
-                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=1200" class="service-img mb-8" alt="Schilderwerk" loading="lazy">
+                <div class="img-fallback rounded-[1.5rem] overflow-hidden mb-8 h-[260px]">
+                    <img src="https://images.pexels.com/photos/6474136/pexels-photo-6474136.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover" alt="Schilderwerk" loading="lazy">
+                </div>
                 <h3 class="text-2xl font-black uppercase italic mb-4 px-2">Schilderwerk</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Hoogglans of zijdeglans afwerking van kozijnen en deuren. Inclusief 10 jaar garantie.</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Hoogwaardige afwerking van kozijnen en deuren met de beste lakken van Nederland.</p>
                 <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between px-2">
-                    <span class="text-orange-500 font-bold text-[10px] tracking-widest uppercase">Sikkens Expert</span>
+                    <span class="text-orange-500 font-bold text-[10px] tracking-widest uppercase">10J Garantie</span>
                     <a href="tel:+31616147413" class="text-white text-sm font-bold underline hover:text-orange-600 transition">Bel →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="py-32 bg-slate-900/40 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-black uppercase italic mb-12 border-l-4 border-orange-600 pl-6 italic">Klantverhalen</h2>
-            
-            <div class="flex overflow-x-auto gap-8 pb-12 hide-scrollbar snap-x snap-mandatory">
-                <div class="flex-none w-[320px] md:w-[400px] snap-center bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/5">
-                    <div class="text-orange-500 text-2xl mb-6 font-bold">★★★★★</div>
-                    <p class="text-slate-300 italic mb-10 text-lg">"Mijn woning in Breda ziet er weer strak uit. De heren van Totaalonderhoud werken ontzettend netjes."</p>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-500 italic">Dhr. van Dongen, Breda</div>
-                </div>
-                <div class="flex-none w-[320px] md:w-[400px] snap-center bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/5">
-                    <div class="text-orange-500 text-2xl mb-6 font-bold">★★★★★</div>
-                    <p class="text-slate-300 italic mb-10 text-lg">"Dak laten reinigen en coaten. Het resultaat is boven verwachting. Zeker de investering waard."</p>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-500 italic">Mevr. Janssen, Tilburg</div>
-                </div>
-                <div class="flex-none w-[320px] md:w-[400px] snap-center bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/5">
-                    <div class="text-orange-500 text-2xl mb-6 font-bold">★★★★★</div>
-                    <p class="text-slate-300 italic mb-10 text-lg">"Echte vakmannen. Geen praatjes maar daden. Alles volgens afspraak opgeleverd."</p>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-500 italic">Fam. Smits, Oosterhout</div>
                 </div>
             </div>
         </div>
@@ -191,35 +163,31 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-20 mb-24">
                 <div>
-                    <h2 class="text-5xl md:text-8xl font-black uppercase italic mb-10 leading-none tracking-tighter italic">Klaar voor <br><span class="text-orange-600 italic">actie?</span></h2>
+                    <h2 class="text-5xl md:text-8xl font-black uppercase italic mb-10 leading-none tracking-tighter">Klaar voor <br><span class="text-orange-600 italic">actie?</span></h2>
                     <p class="text-slate-500 text-xl italic mb-12">Bel ons vandaag nog voor een scherpe offerte op maat.</p>
-                    <div class="flex space-x-6">
-                        <div class="w-14 h-14 bg-orange-600/10 rounded-2xl flex items-center justify-center text-orange-600 font-bold">NB</div>
-                        <div class="w-14 h-14 bg-orange-600/10 rounded-2xl flex items-center justify-center text-orange-600 font-bold">5★</div>
-                    </div>
                 </div>
                 <div class="bg-orange-600 p-12 rounded-[3.5rem] shadow-3xl shadow-orange-600/30 text-white">
-                    <h3 class="text-3xl font-black uppercase italic mb-10 italic">Neem Contact Op</h3>
+                    <h3 class="text-3xl font-black uppercase italic mb-10">Direct Contact</h3>
                     <div class="space-y-8">
                         <a href="tel:+31616147413" class="flex items-center space-x-6 group">
                             <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl group-hover:bg-white/20 transition">📞</div>
-                            <span class="text-3xl font-extrabold group-hover:underline italic leading-none">06 16 14 74 13</span>
+                            <span class="text-3xl font-extrabold group-hover:underline italic">06 16 14 74 13</span>
                         </a>
                         <a href="mailto:info@totaalonderhoudbrabant.nl" class="flex items-center space-x-6 group">
                             <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl group-hover:bg-white/20 transition">✉️</div>
-                            <span class="text-lg font-bold group-hover:underline italic leading-none">info@totaalonderhoudbrabant.nl</span>
+                            <span class="text-lg font-bold group-hover:underline italic">info@totaalonderhoudbrabant.nl</span>
                         </a>
                         <div class="flex items-center space-x-6">
-                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl italic leading-none">📍</div>
-                            <span class="text-lg font-bold italic leading-none">Minervum 7444, Breda</span>
+                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl">📍</div>
+                            <span class="text-lg font-bold italic">Minervum 7444, Breda</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-slate-700 text-[10px] font-black uppercase tracking-[0.5em] italic">&copy; 2026 Totaalonderhoud Brabant | Meesters in Vastgoed</p>
-                <div class="flex space-x-10 text-[10px] font-black uppercase tracking-widest text-slate-600 italic">
+            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-700 text-[10px] font-black uppercase tracking-[0.5em] italic">
+                <p>&copy; 2026 Totaalonderhoud Brabant</p>
+                <div class="flex space-x-10">
                     <span>KVK: 12345678</span>
                     <span>Noord-Brabant</span>
                 </div>

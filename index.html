@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deuk-Fix Breda | Uitdeuken Zonder Spuiten (PDR) Expert</title>
+    <title>Totaalonderhoud Brabant | Uw Woning in Topconditie</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
@@ -11,101 +11,100 @@
         .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #f1f5f9; }
         
         .hero-section { 
-            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), 
-            url('https://images.unsplash.com/photo-1486006396193-471a2a3bc76d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'); 
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
+            url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'); 
             background-size: cover; 
             background-position: center; 
         }
         
-        .project-card { transition: all 0.4s ease; }
-        .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .service-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .service-card:hover { transform: translateY(-10px); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-[#fcfcfc] text-slate-900">
 
-    <nav class="fixed w-full z-50 glass-nav h-20 flex items-center justify-between px-6 lg:px-12 transition-all">
+    <nav class="fixed w-full z-50 glass-nav h-20 flex items-center justify-between px-6 lg:px-12">
         <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-extrabold text-xl shadow-md">D</div>
-            <div class="text-xl font-extrabold tracking-tight italic text-slate-900 uppercase">Deuk-Fix<span class="text-blue-600 font-black">Breda</span></div>
+            <div class="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center text-white font-extrabold text-xl shadow-lg">T</div>
+            <div class="text-xl font-extrabold tracking-tighter text-slate-900 uppercase">Totaalonderhoud<span class="text-orange-600">Brabant</span></div>
         </div>
-        <div class="hidden md:flex items-center space-x-8 text-[12px] font-bold uppercase tracking-widest text-slate-500">
-            <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
-            <a href="#expertise" class="hover:text-blue-600 transition-colors">Technieken</a>
-            <a href="#waarom" class="hover:text-blue-600 transition-colors">Voordelen</a>
-            <a href="#contact" class="bg-blue-600 text-white px-7 py-2.5 rounded-full hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30">Direct Offerte</a>
+        <div class="hidden md:flex items-center space-x-8 text-[11px] font-black uppercase tracking-[0.2em] text-slate-500">
+            <a href="#diensten" class="hover:text-orange-600 transition-colors">Diensten</a>
+            <a href="#over" class="hover:text-orange-600 transition-colors">Over Ons</a>
+            <a href="#contact" class="bg-orange-600 text-white px-7 py-3 rounded-full hover:bg-orange-700 transition-all shadow-lg shadow-orange-600/30">Gratis Inspectie</a>
         </div>
     </nav>
 
     <section id="home" class="pt-28 px-4 md:px-8 pb-12">
-        <div class="hero-section h-[75vh] rounded-[2.5rem] flex items-center justify-center text-center text-white shadow-2xl relative overflow-hidden">
+        <div class="hero-section h-[80vh] rounded-[2.5rem] flex items-center justify-center text-center text-white shadow-2xl relative overflow-hidden">
             <div class="max-w-4xl px-6 relative z-10">
-                <div class="inline-block bg-blue-500/20 border border-blue-400/30 text-[11px] font-black uppercase tracking-[0.2em] px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
-                    Gespecialiseerd in PDR & Hagelschade
+                <div class="inline-block bg-orange-500/20 border border-orange-400/30 text-[10px] font-black uppercase tracking-[0.3em] px-6 py-2 rounded-full mb-8 backdrop-blur-sm">
+                    Specialist in Gevel & Dak
                 </div>
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight tracking-tighter uppercase italic text-white">Deuk weg, <br><span class="text-blue-400">lak behouden.</span></h1>
-                <p class="text-lg md:text-xl text-slate-300 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Professioneel uitdeuken zonder spuiten. Snel, duurzaam en tot 60% goedkoper dan traditioneel herstel.</p>
+                <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-[1.1] tracking-tighter uppercase italic">Bescherm uw <br><span class="text-orange-400">vastgoed.</span></h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Duurzaam onderhoud voor woningen en bedrijfspanden in heel Noord-Brabant. Kwaliteit zonder compromis.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="bg-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-600/40">Sms een foto</a>
-                    <a href="#expertise" class="bg-white/10 border border-white/20 backdrop-blur-md px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Hoe het werkt</a>
+                    <a href="#contact" class="bg-orange-600 px-12 py-5 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-xl">Vraag Offerte Aan</a>
+                    <a href="#diensten" class="bg-white/10 border border-white/20 backdrop-blur-md px-12 py-5 rounded-2xl font-bold text-lg hover:bg-white/20 transition">Bekijk Werk</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="expertise" class="py-20 max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tighter text-slate-900 uppercase italic">Onze Kracht</h2>
-            <p class="text-slate-500 font-medium max-w-2xl mx-auto italic">Vakmanschap dat onzichtbaar resultaat garandeert.</p>
+    <section id="diensten" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-[12px] font-black text-orange-600 uppercase tracking-[0.4em] mb-4">Onze Expertise</h2>
+            <h3 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-slate-900 uppercase italic">Wat wij voor u doen</h3>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-[2rem] overflow-hidden border border-slate-200 project-card">
-                <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover bg-slate-100">
-                <div class="p-8">
-                    <h3 class="font-extrabold text-2xl mb-3 text-slate-900">Parkeerschade</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Kleine deukjes door portieren of winkelwagens worden binnen een uur hersteld terwijl u wacht.</p>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-100 service-card">
+                <img src="https://images.unsplash.com/photo-1628412443411-1abb7ec0a5c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover">
+                <div class="p-10">
+                    <h4 class="font-extrabold text-2xl mb-4 text-slate-900">Dakreiniging</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Verwijderen van algen en mos plus een beschermende coating voor een langere levensduur.</p>
                 </div>
             </div>
-            <div class="bg-white rounded-[2rem] overflow-hidden border border-slate-200 project-card">
-                <img src="https://images.unsplash.com/photo-1507136566006-bb31ef556e16?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover bg-slate-100">
-                <div class="p-8">
-                    <h3 class="font-extrabold text-2xl mb-3 text-slate-900">Hagelschade</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Grootschalig herstel van hagelinslag zonder dat er een druppel verf aan te pas komt.</p>
+            <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-100 service-card">
+                <img src="https://images.unsplash.com/photo-1584622781564-1d9876a13d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover">
+                <div class="p-10">
+                    <h4 class="font-extrabold text-2xl mb-4 text-slate-900">Gevelrenovatie</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Stoomreiniging, nieuw voegwerk en impregneren. Uw gevel weer als nieuw.</p>
                 </div>
             </div>
-            <div class="bg-white rounded-[2rem] overflow-hidden border border-slate-200 project-card">
-                <img src="https://images.unsplash.com/photo-1625047509168-a7006f9adbc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover bg-slate-100">
-                <div class="p-8">
-                    <h3 class="font-extrabold text-2xl mb-3 text-slate-900">PDR Techniek</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Met speciaal gereedschap masseren wij de deuk terug in de originele vorm.</p>
+            <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-100 service-card">
+                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover">
+                <div class="p-10">
+                    <h4 class="font-extrabold text-2xl mb-4 text-slate-900">Schilderwerk</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Hoogwaardig buiten- en binnenschilderwerk met de beste materialen van Sigma en Sikkens.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 max-w-4xl mx-auto px-6 text-center">
-        <div class="bg-white p-10 md:p-16 rounded-[3rem] shadow-xl border border-slate-200">
-            <span class="bg-blue-50 text-blue-600 font-bold uppercase text-[10px] tracking-widest px-4 py-2 rounded-full mb-6 inline-block">Direct een prijsopgave</span>
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tighter text-slate-900 uppercase italic">Sms een foto van de deuk</h2>
-            <p class="text-slate-500 mb-10 text-lg font-medium">Voor een snelle prijsindicatie kunt u een foto van de schade sturen via WhatsApp of sms.</p>
+    <section id="contact" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="bg-slate-900 rounded-[4rem] p-12 md:p-20 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-orange-600 rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
             
-            <a href="tel:+31644336021" class="inline-flex items-center justify-center gap-4 bg-slate-900 text-white px-10 py-5 rounded-2xl font-extrabold text-2xl hover:bg-blue-600 transition-all shadow-xl w-full md:w-auto">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tighter italic uppercase">Klaar voor een <br>inspectie op locatie?</h2>
+            <p class="text-slate-400 mb-12 text-lg font-medium max-w-xl mx-auto">Wij komen graag vrijblijvend bij u langs om de staat van uw woning te beoordelen.</p>
+            
+            <a href="tel:+31616147413" class="inline-flex items-center justify-center gap-4 bg-orange-600 text-white px-10 py-6 rounded-3xl font-black text-2xl md:text-4xl hover:bg-white hover:text-orange-600 transition-all shadow-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                06 4433 6021
+                06 16 14 74 13
             </a>
             
-            <div class="mt-10 pt-8 border-t border-slate-100">
-                <p class="text-slate-400 text-[11px] font-black uppercase tracking-[0.3em]">Locatie Breda</p>
-                <p class="text-slate-700 font-bold mt-2">Breda en omgeving (op locatie mogelijk)</p>
+            <div class="mt-12 text-slate-500 font-bold uppercase tracking-[0.3em] text-[10px]">
+                Regio Breda • Tilburg • Eindhoven
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-slate-200 mt-10">
-        <p class="text-slate-400 text-[10px] font-extrabold uppercase tracking-[0.4em]">
-            &copy; 2026 Deuk-Fix Breda | Digital Asset door <span class="text-slate-900">R.S</span>
+    <footer class="py-12 text-center">
+        <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.5em]">
+            &copy; 2026 Totaalonderhoud Brabant | Exclusive Design by <span class="text-slate-900">R.S</span>
         </p>
     </footer>
 

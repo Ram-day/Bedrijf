@@ -3,95 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spack Spuiter Super | Vakmanschap in Breda</title>
+    <title>Spack Spuiter Super | Meesters in Wandafwerking</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
         .hero-section { 
-            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
             url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=2000'); 
             background-size: cover; background-position: center; 
         }
-        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        .project-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .project-card:hover { transform: translateY(-10px); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
     <nav class="fixed w-full z-50 glass-nav h-20 flex items-center justify-between px-6 md:px-12">
         <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">S</div>
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">S</div>
             <div class="text-xl font-extrabold tracking-tight italic">SPACKSPUITER<span class="text-blue-600">SUPER</span></div>
         </div>
-        <div class="hidden md:flex items-center space-x-8 text-sm font-bold uppercase tracking-wider">
-            <a href="#home" class="hover:text-blue-600 transition">Home</a>
-            <a href="#diensten" class="hover:text-blue-600 transition">Diensten</a>
+        <div class="hidden md:flex items-center space-x-8 text-[11px] font-black uppercase tracking-[0.2em] text-slate-500">
+            <a href="#home" class="hover:text-blue-600 transition">Overzicht</a>
+            <a href="#diensten" class="hover:text-blue-600 transition">Projecten</a>
             <a href="#reviews" class="hover:text-blue-600 transition">Reviews</a>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+            <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-600 transition shadow-md">Offerte Aanvraag</a>
         </div>
     </nav>
 
     <section id="home" class="pt-24 px-4 md:px-8">
-        <div class="hero-section h-[70vh] rounded-[2.5rem] flex items-center justify-center text-center text-white shadow-2xl">
+        <div class="hero-section h-[75vh] rounded-[3rem] flex items-center justify-center text-center text-white shadow-2xl relative overflow-hidden">
             <div class="max-w-3xl px-6">
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Muren met <br><span class="text-blue-400 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 italic">Superkracht</span></h1>
-                <p class="text-lg text-slate-300 mb-8">De #1 specialist in Breda voor spackspuiten en stucwerk met een 9.8 score.</p>
-                <a href="#contact" class="bg-blue-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-700 transition inline-block">Direct Offerte</a>
+                <div class="inline-block bg-blue-600 text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">Landelijke Dekking</div>
+                <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-none tracking-tighter italic">SUPER<br><span class="text-blue-400">STRAK.</span></h1>
+                <p class="text-lg text-slate-300 mb-10 font-medium">Uw muren, onze passie. Wij combineren snelheid met een ongekende 9.8 klanttevredenheid.</p>
+                <a href="#contact" class="bg-blue-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-500/20 inline-block">Direct Contact</a>
             </div>
         </div>
     </section>
 
-    <section id="diensten" class="py-24 max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-extrabold mb-12 text-center italic uppercase">Onze Diensten</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg card-hover">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800" class="w-full h-48 object-cover">
-                <div class="p-8"><h3 class="font-bold text-xl mb-2 italic uppercase">Spackspuiten</h3><p class="text-slate-500 text-sm">Snel en strak resultaat voor elk budget.</p></div>
-            </div>
-            <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg card-hover">
-                <img src="https://images.unsplash.com/photo-1621905235277-22649060136b?auto=format&fit=crop&q=80&w=800" class="w-full h-48 object-cover">
-                <div class="p-8"><h3 class="font-bold text-xl mb-2 italic uppercase">Glad Stucwerk</h3><p class="text-slate-500 text-sm">Perfect egale muren voor een luxe uitstraling.</p></div>
-            </div>
-            <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg card-hover">
-                <img src="https://images.unsplash.com/photo-1589939705384-5185138a047a?auto=format&fit=crop&q=80&w=800" class="w-full h-48 object-cover">
-                <div class="p-8"><h3 class="font-bold text-xl mb-2 italic uppercase">Latex Spuiten</h3><p class="text-slate-500 text-sm">Streeploze afwerking in elke gewenste kleur.</p></div>
-            </div>
+    <section id="diensten" class="py-28 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-black mb-4 tracking-tighter uppercase italic">Onze Projecten</h2>
+            <div class="h-1.5 w-20 bg-blue-600 mx-auto rounded-full"></div>
         </div>
-    </section>
-
-    <section id="reviews" class="py-24 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-extrabold mb-12 text-center">70+ Tevreden Klanten (9.8/10)</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/10 italic">
-                    <p class="mb-4 text-slate-300">"Ongelooflijk hoe snel en netjes dit team werkt. Muren zijn als nieuw!"</p>
-                    <span class="text-blue-400 font-bold">— Peter uit Breda</span>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 project-card">
+                <img src="https://images.unsplash.com/photo-1589939705384-5185138a047a?q=80&w=1470&auto=format&fit=crop" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="font-bold text-xl mb-3 uppercase italic">Spackspuitwerk</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Hoogwaardige afwerking met een fijne korrel. Ideaal voor plafonds en wanden in nieuwbouw.</p>
                 </div>
-                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/10 italic">
-                    <p class="mb-4 text-slate-300">"Eindelijk een bedrijf dat afspraken nakomt. De 9.8 score is meer dan verdiend."</p>
-                    <span class="text-blue-400 font-bold">— Linda S.</span>
+            </div>
+            <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 project-card">
+                <img src="https://images.unsplash.com/photo-1621905235277-22649060136b?q=80&w=1470&auto=format&fit=crop" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="font-bold text-xl mb-3 uppercase italic">Glad Stucwerk</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Meesterlijk gladde wanden voor een luxe uitstraling. Direct klaar voor saus- of behangwerk.</p>
                 </div>
-                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/10 italic">
-                    <p class="mb-4 text-slate-300">"Prachtig glad stucwerk geleverd in onze nieuwbouwwoning. Super blij mee!"</p>
-                    <span class="text-blue-400 font-bold">— Mark T.</span>
+            </div>
+            <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 project-card">
+                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=1431&auto=format&fit=crop" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="font-bold text-xl mb-3 uppercase italic">Latex Spuiten</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">Streeploze resultaten met de nieuwste spuittechnieken. Dekkend in elke gewenste kleur.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-extrabold mb-6 italic uppercase">Klaar voor de start?</h2>
-        <div class="bg-white p-12 rounded-[3rem] shadow-2xl border border-slate-100">
-            <p class="text-slate-500 mb-8 font-medium italic">Neem direct contact op voor een vrijblijvende offerte.</p>
-            <a href="tel:+31782033599" class="bg-blue-600 text-white px-12 py-5 rounded-2xl font-black text-2xl hover:bg-slate-900 transition inline-block">BEL 078 203 3599</a>
-            <p class="mt-8 text-slate-400 text-xs font-bold uppercase tracking-widest leading-loose">Riethil 14, 4815 CD Breda</p>
+    <section id="reviews" class="py-28 bg-slate-900 text-white rounded-[4rem] mx-4 md:mx-8 mb-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-16 tracking-tighter uppercase italic">Wat Klanten Zeggen</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white/5 p-10 rounded-[2rem] border border-white/10 hover:bg-white/10 transition">
+                    <div class="text-blue-400 text-3xl mb-4">★★★★★</div>
+                    <p class="mb-6 text-slate-300 italic font-medium">"Alles werd super netjes afgeplakt en het resultaat is echt spiegelglad. Top team!"</p>
+                    <span class="text-xs font-black uppercase tracking-widest">— Mevr. Janssen, Breda</span>
+                </div>
+                <div class="bg-white/5 p-10 rounded-[2rem] border border-white/10 hover:bg-white/10 transition">
+                    <div class="text-blue-400 text-3xl mb-4">★★★★★</div>
+                    <p class="mb-6 text-slate-300 italic font-medium">"De snelheid waarmee deze mannen werken is ongekend. In twee dagen het hele huis gedaan."</p>
+                    <span class="text-xs font-black uppercase tracking-widest">— Dennis de Graaf</span>
+                </div>
+                <div class="bg-white/5 p-10 rounded-[2rem] border border-white/10 hover:bg-white/10 transition">
+                    <div class="text-blue-400 text-3xl mb-4">★★★★★</div>
+                    <p class="mb-6 text-slate-300 italic font-medium">"Eerlijke prijzen en vakmensen die hun afspraken nakomen. De 9.8 score klopt 100%."</p>
+                    <span class="text-xs font-black uppercase tracking-widest">— P. van Meer</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-slate-200 text-center">
-        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em]">
-            &copy; 2026 Spack Spuiter Super | Ontwerp door <span class="text-slate-900">R.S</span>
+    <section id="contact" class="py-28 max-w-5xl mx-auto px-6 text-center">
+        <div class="bg-white p-12 md:p-20 rounded-[4rem] shadow-2xl border border-slate-100 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full opacity-50"></div>
+            <h2 class="text-4xl md:text-6xl font-black mb-6 italic uppercase tracking-tighter">Direct een Offerte?</h2>
+            <p class="text-slate-500 mb-12 text-lg font-medium">Bel ons direct of stuur een bericht voor een prijsopgave op maat.</p>
+            
+            <div class="flex flex-col gap-6 items-center">
+                <a href="tel:+31782033599" class="bg-blue-600 text-white px-12 py-6 rounded-3xl font-black text-3xl hover:bg-slate-900 hover:scale-105 transition shadow-2xl shadow-blue-500/30 flex items-center gap-4 group">
+                    <span>078 203 3599</span>
+                </a>
+                <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.5em] mt-6">Riethil 14, 4815 CD Breda</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-slate-300 text-[9px] font-black uppercase tracking-[0.6em]">
+            &copy; 2026 Spack Spuiter Super | Digital Asset by <span class="text-slate-900">R.S</span>
         </p>
     </footer>
 

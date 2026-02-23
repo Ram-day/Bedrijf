@@ -3,168 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totaalonderhoud Brabant | Meesters in Vastgoed</title>
+    <title>Stef Cleaning Services | Specialist in Gevel & Dak</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: #f8fafc; overflow-x: hidden; }
-        .glass-header { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
-        .hero-gradient { background: radial-gradient(circle at top right, rgba(234, 88, 12, 0.15), transparent), radial-gradient(circle at bottom left, rgba(30, 41, 59, 1), transparent); }
-        
-        /* Kaarten en interactie */
-        .card-blur { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; }
-        .card-blur:hover { border-color: #ea580c; transform: translateY(-8px); background: rgba(30, 41, 59, 0.7); }
-        
-        /* Button effect */
-        .btn-shine { position: relative; overflow: hidden; }
-        .btn-shine::after { content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: rgba(255,255,255,0.1); transform: rotate(45deg); transition: 0.6s; }
-        .btn-shine:hover::after { left: 120%; }
-
-        /* Review Scroll */
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .hero-gradient { background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.1), transparent), #0f172a; }
+        .glass-card { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; }
+        .glass-card:hover { border-color: #f97316; transform: translateY(-5px); }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="antialiased">
 
-    <header class="fixed w-full z-50 glass-header px-6 py-4">
+    <header class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/5 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="bg-orange-600 p-2 rounded-lg shadow-lg">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                </div>
-                <div class="flex flex-col leading-none">
-                    <span class="text-xl font-extrabold tracking-tighter uppercase">Totaalonderhoud</span>
-                    <span class="text-orange-600 text-[10px] font-bold tracking-[0.4em] uppercase">Brabant</span>
-                </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-black tracking-tighter uppercase italic text-white">STEF<span class="text-orange-500">CLEANING</span></span>
+                <span class="text-[9px] text-slate-400 font-bold tracking-[0.3em] uppercase">Services Breda</span>
             </div>
-            <nav class="hidden md:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-slate-400">
-                <a href="#diensten" class="hover:text-orange-500 transition">Expertise</a>
-                <a href="#waarom" class="hover:text-orange-500 transition">Waarom wij?</a>
-                <a href="#reviews" class="hover:text-orange-500 transition">Recensies</a>
-                <a href="tel:+31616147413" class="bg-orange-600 text-white px-6 py-2.5 rounded-full hover:bg-orange-700 transition btn-shine italic shadow-lg shadow-orange-600/20">Bel Nu</a>
-            </nav>
+            <a href="tel:+31653181155" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full text-xs font-bold uppercase italic transition-all">Direct Contact</a>
         </div>
     </header>
 
-    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden hero-gradient">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover opacity-20 grayscale" alt="Luxe woning">
-        </div>
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-orange-600/10 border border-orange-600/20 text-orange-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-6">Uw partner in regio Breda</span>
-            <h1 class="text-5xl md:text-[92px] font-[800] tracking-tighter uppercase italic leading-[0.85] mb-8">
-                Uw woning verdient <br><span class="text-orange-600 underline decoration-white/10 italic">perfectie.</span>
-            </h1>
-            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light italic">
-                Specialist in dakreiniging, gevelherstel en hoogwaardig schilderwerk. Vakmanschap met 10 jaar garantie.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="tel:+31616147413" class="w-full sm:w-auto bg-orange-600 text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-orange-600/30 hover:scale-105 transition-all btn-shine">Bel voor Advies</a>
-                <a href="#diensten" class="w-full sm:w-auto text-slate-300 border border-white/10 px-12 py-5 rounded-2xl font-black text-xl hover:bg-white/5 transition-all italic underline">Onze Diensten</a>
+    <section class="relative min-h-screen flex items-center justify-center pt-20 hero-gradient px-6">
+        <div class="text-center max-w-4xl">
+            <span class="inline-block py-1 px-3 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-500 text-[10px] font-bold uppercase tracking-widest mb-6">10 Jaar Garantie op Impregneren</span>
+            <h1 class="text-5xl md:text-[80px] font-black uppercase italic leading-[0.9] mb-8 tracking-tighter">Wij maken uw <br><span class="text-orange-500">gevel weer nieuw.</span></h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light italic">Gespecialiseerd in dak- en gevelreiniging, voegwerk en renovatie voor Breda en omgeving.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+31653181155" class="bg-white text-slate-900 px-10 py-4 rounded-2xl font-black uppercase italic hover:bg-orange-500 hover:text-white transition-all">Bel 06 53 18 11 55</a>
+                <a href="#diensten" class="border border-white/10 px-10 py-4 rounded-2xl font-black uppercase italic hover:bg-white/5 transition-all">Onze Werkzaamheden</a>
             </div>
         </div>
     </section>
 
-    <section id="waarom" class="py-20 bg-slate-950/50 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
-            <div class="space-y-4">
-                <div class="text-orange-600 text-4xl font-black italic">10+</div>
-                <h3 class="text-sm font-bold uppercase tracking-widest text-white italic">Jaar Ervaring</h3>
-                <p class="text-slate-500 text-xs italic">Gecertificeerde vakmensen uit de regio.</p>
+    <section id="diensten" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-[2rem]">
+                <div class="text-orange-500 mb-6 font-black text-4xl italic">01.</div>
+                <h3 class="text-2xl font-bold mb-4 uppercase italic">Gevelreiniging</h3>
+                <p class="text-slate-400 text-sm italic leading-relaxed">Professionele reiniging met warm water of stralen. Wij verwijderen graffiti, algen en diepgelegen vuil zonder schade.</p>
             </div>
-            <div class="space-y-4 border-x border-white/5">
-                <div class="text-orange-600 text-4xl font-black italic">100%</div>
-                <h3 class="text-sm font-bold uppercase tracking-widest text-white italic">Tevredenheid</h3>
-                <p class="text-slate-500 text-xs italic">Betaling pas na volledige oplevering.</p>
+            <div class="glass-card p-8 rounded-[2rem]">
+                <div class="text-orange-500 mb-6 font-black text-4xl italic">02.</div>
+                <h3 class="text-2xl font-bold mb-4 uppercase italic">Voegwerk</h3>
+                <p class="text-slate-400 text-sm italic leading-relaxed">Uithakken van oude voegen en opnieuw voegen voor een frisse uitstraling en optimale bescherming.</p>
             </div>
-            <div class="space-y-4">
-                <div class="text-orange-600 text-4xl font-black italic">GRATIS</div>
-                <h3 class="text-sm font-bold uppercase tracking-widest text-white italic">Inspectie</h3>
-                <p class="text-slate-500 text-xs italic">Vrijblijvende opname op locatie.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="diensten" class="py-32 px-6 max-w-7xl mx-auto">
-        <div class="mb-20 flex flex-col md:flex-row justify-between items-end gap-6">
-            <div>
-                <span class="text-orange-600 font-bold text-xs uppercase tracking-[0.4em] mb-4 block">Onze Expertise</span>
-                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter">Wat wij <span class="text-orange-600">doen.</span></h2>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-10">
-            <div class="card-blur rounded-[2.5rem] p-5 flex flex-col shadow-xl">
-                <div class="rounded-[1.5rem] overflow-hidden mb-8 h-64">
-                    <img src="https://images.unsplash.com/photo-1628413993904-94ecb60f1239?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Dakreiniging">
-                </div>
-                <h3 class="text-2xl font-black uppercase italic mb-4 px-2 italic">Dakreiniging</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Stoomreiniging onder gepaste druk en professionele coating ter voorkoming van mosgroei.</p>
-                <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between px-2">
-                    <span class="text-orange-500 font-bold text-[10px] tracking-widest uppercase">Vanaf €15,- m²</span>
-                    <a href="tel:+31616147413" class="text-white text-sm font-bold underline hover:text-orange-600 transition italic">Info →</a>
-                </div>
-            </div>
-
-            <div class="card-blur rounded-[2.5rem] p-5 flex flex-col shadow-xl">
-                <div class="rounded-[1.5rem] overflow-hidden mb-8 h-64">
-                    <img src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Gevelherstel">
-                </div>
-                <h3 class="text-2xl font-black uppercase italic mb-4 px-2 italic">Gevelherstel</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Herstel van scheuren, nieuw voegwerk en hydrofoberen tegen doorslaand vocht.</p>
-                <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between px-2">
-                    <span class="text-orange-500 font-bold text-[10px] tracking-widest uppercase">Gratis Check</span>
-                    <a href="tel:+31616147413" class="text-white text-sm font-bold underline hover:text-orange-600 transition italic">Info →</a>
-                </div>
-            </div>
-
-            <div class="card-blur rounded-[2.5rem] p-5 flex flex-col shadow-xl">
-                <div class="rounded-[1.5rem] overflow-hidden mb-8 h-64">
-                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Schilderwerk">
-                </div>
-                <h3 class="text-2xl font-black uppercase italic mb-4 px-2 italic">Schilderwerk</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-10 px-2 italic">Hoogglans of zijdeglans afwerking met Sikkens lakken voor een onverwoestbaar resultaat.</p>
-                <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between px-2">
-                    <span class="text-orange-500 font-bold text-[10px] tracking-widest uppercase">10J Garantie</span>
-                    <a href="tel:+31616147413" class="text-white text-sm font-bold underline hover:text-orange-600 transition italic">Info →</a>
-                </div>
+            <div class="glass-card p-8 rounded-[2rem]">
+                <div class="text-orange-500 mb-6 font-black text-4xl italic">03.</div>
+                <h3 class="text-2xl font-bold mb-4 uppercase italic">Dakreiniging</h3>
+                <p class="text-slate-400 text-sm italic leading-relaxed">Verleng de levensduur van uw dak. Wij reinigen en behandelen uw pannen tegen mos en vocht.</p>
             </div>
         </div>
     </section>
 
-    <section id="reviews" class="py-32 bg-slate-900/50 overflow-hidden">
+    <section class="py-24 bg-slate-900/50">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-black uppercase italic mb-12 border-l-4 border-orange-600 pl-6 italic">Klantverhalen</h2>
-            <div class="flex overflow-x-auto gap-8 pb-12 hide-scrollbar snap-x snap-mandatory">
-                <div class="flex-none w-[320px] md:w-[400px] snap-center bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/5">
-                    <div class="text-orange-500 text-2xl mb-6">★★★★★</div>
-                    <p class="text-slate-300 italic mb-10 text-lg">"Mijn woning in Breda ziet er weer als nieuw uit na de gevelreiniging. Echte vakmensen."</p>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-500 italic italic">Dhr. van Dongen, Breda</div>
+            <h2 class="text-3xl font-black uppercase italic mb-12">Wat klanten zeggen</h2>
+            <div class="flex overflow-x-auto gap-6 hide-scrollbar pb-8">
+                <div class="flex-none w-80 bg-slate-800/40 p-8 rounded-3xl border border-white/5 italic">
+                    <p class="text-slate-300 mb-6 leading-relaxed">"Stef heeft onze gevel weer als nieuw gemaakt. Zeer professioneel en duidelijke afspraken."</p>
+                    <span class="text-orange-500 font-bold text-xs uppercase italic tracking-widest">- Fam. De Vries, Breda</span>
                 </div>
-                <div class="flex-none w-[320px] md:w-[400px] snap-center bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/5">
-                    <div class="text-orange-500 text-2xl mb-6">★★★★★</div>
-                    <p class="text-slate-300 italic mb-10 text-lg">"Eerlijke prijs en zeer strak schilderwerk. Ze werken ontzettend netjes en ruimen alles op."</p>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-500 italic italic">Mevr. Janssen, Tilburg</div>
-                </div>
-                <div class="flex-none w-[320px] md:w-[400px] snap-center bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/5">
-                    <div class="text-orange-500 text-2xl mb-6">★★★★★</div>
-                    <p class="text-slate-300 italic mb-10 text-lg">"Dak laten coaten en het resultaat is verbluffend. Goede communicatie en snelle service."</p>
-                    <div class="text-xs font-bold uppercase tracking-widest text-slate-500 italic italic">Fam. Smits, Oosterhout</div>
+                <div class="flex-none w-80 bg-slate-800/40 p-8 rounded-3xl border border-white/5 italic">
+                    <p class="text-slate-300 mb-6 leading-relaxed">"10 jaar garantie op het impregneren gaf ons de doorslag. Het resultaat is top!"</p>
+                    <span class="text-orange-500 font-bold text-xs uppercase italic tracking-widest">- J. Hendriks, Oosterhout</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-[#020617] pt-32 pb-16 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-5xl md:text-8xl font-black uppercase italic mb-10 leading-none tracking-tighter italic italic">Klaar voor <br><span class="text-orange-600">actie?</span></h2>
-            <div class="max-w-xl mx-auto bg-orange-600 p-12 rounded-[3.5rem] shadow-3xl shadow-orange-600/30 text-white mb-20">
-                <h3 class="text-2xl font-black uppercase italic mb-10 italic italic underline">Direct Contact</h3>
-                <a href="tel:+31616147413" class="text-3xl md:text-5xl font-black block hover:scale-105 transition-all mb-4 italic italic">06 16 14 74 13</a>
-                <p class="text-sm font-bold opacity-80 uppercase tracking-widest italic italic">Minervum 7444, Breda</p>
+    <footer class="py-20 bg-slate-950 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-black uppercase italic mb-12 italic">Uw gevel, <br><span class="text-orange-500 text-outline">onze zorg.</span></h2>
+            <div class="inline-flex flex-col items-center">
+                <a href="tel:+31653181155" class="text-2xl md:text-4xl font-black text-white hover:text-orange-500 transition-all mb-4 italic">06 53 18 11 55</a>
+                <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.4em] italic">Vrijblijvend advies aan huis</p>
             </div>
-            <p class="text-slate-700 text-[10px] font-black uppercase tracking-[0.5em] italic italic">&copy; 2026 Totaalonderhoud Brabant | Breda</p>
         </div>
     </footer>
 
